@@ -14,8 +14,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Fabrizio Tarizzo
+tagline: Sito personale
+description: Sito web personale di Fabrizio Tarizzo
 
-description: Sito personale
+permalink: /:year-:month-:day/:title/
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.fabriziotarizzo.org" # the base hostname & protocol for your site
 twitter_username: bluvi0lin
@@ -23,3 +26,11 @@ github_username:  bluviolin
 
 # Build settings
 markdown: kramdown
+
+defaults:
+  - scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      locale:
+          lang: it
+          territory: IT
