@@ -1,0 +1,53 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+    body {padding:1em 0.75em}
+    
+    footer {text-align:center;border-top:solid 1px}
+    
+    .site-header {
+        background-color:#3c3c3c;
+        padding:5px;
+        color:#dddddd;
+        text-align:left;
+        
+        .branding {
+            position:relative; min-height:80px;
+            
+            h1 {font-size:25px;margin:0};
+            
+            img {width:75px; height:75px; float:left};
+            
+            .navbar-toggle {
+                float:none;
+                padding:0;
+                margin:0;
+                position:absolute;
+                right:10px;
+                top:10px;
+                
+                .icon-bar {background-color:#dddddd;}
+            }
+        }
+    }
+    
+    .site-content {clear:both}
+    
+    .links-list {list-style-type: none; margin:0 0 10px 0; padding:0}
+    .links-list li {display: inline-block;padding:0 5px }
+    .links-list li a {color: inherit}
+    
+    @media (min-width:768px){
+        .site-header {float:left; width:340px; position:fixed;text-align:center}
+        .site-header .branding h1 {margin:15px 0 10px 0}
+        .site-header .branding img {width:200px; height:200px; float:none}
+        .site-content {float:right; width: 400px}
+    }
+    @media (min-width:992px){
+        .site-content {float:right; width: 600px}
+    }
+    @media (min-width:1200px){
+        .site-content {float:right; width: 800px}
+    }
